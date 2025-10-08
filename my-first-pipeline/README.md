@@ -1,1 +1,0 @@
-- This repository contains a simple Jenkins pipeline used to verify whether the Docker-based agent (slave) configuration is working correctly.
