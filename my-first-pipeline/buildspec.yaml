@@ -12,6 +12,9 @@ phases:
   build:
     commands:
       - echo "Build completed !"
+  post_build:
+    commands:
+      - echo "Build completed on `date`"
 artifacts:
   files:
     - '**/*'
