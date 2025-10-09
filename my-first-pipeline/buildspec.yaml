@@ -11,10 +11,13 @@ phases:
       - npm test 
   build:
     commands:
-      - echo "Build completed !"
+      - echo "Creating artifact..."
+      - zip -r my-app.zip . -x "*.git*" -x "node_modules/*"
+      - echo "Artifact created!"
   post_build:
     commands:
       - echo "Build completed on `date`"
 artifacts:
   files:
-    - '**/*'
+     - my-app.zip
+  name: my-build-artifact
