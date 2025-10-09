@@ -19,5 +19,5 @@ phases:
       - echo "Build completed on `date`"
 artifacts:
   files:
-     - my-app.zip
+     - my-first-pipeline/my-app.zip
   name: my-build-artifact
