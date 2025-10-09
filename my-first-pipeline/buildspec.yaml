@@ -3,6 +3,7 @@ phases:
   install:
     commands:
       - echo "Installing dependencies..."
+      - cd my-first-pipeline
       - npm install 
   pre_build:
     commands:
@@ -14,4 +15,3 @@ phases:
 artifacts:
   files:
     - '**/*'
-    
