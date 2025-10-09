@@ -8,6 +8,7 @@ phases:
   pre_build:
     commands:
       - echo "Running tests... "
+      - cd my-first-pipeline
       - npm test 
   build:
     commands:
